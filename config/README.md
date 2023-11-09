@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"testing"
 	
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config"
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config/source/file"
+	"github.com/welleren/go-admin-core/config"
+	"github.com/welleren/go-admin-core/config/source/file"
 )
 
 func TestApp(t *testing.T)  {

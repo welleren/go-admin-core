@@ -54,10 +54,6 @@ func (l *Logger) LogRole(roles []string) {
 	})
 }
 
-func (l *Logger) LogError(error error, msg ...string) {
-
-}
-
 // LogPolicy log info related to policy.
 func (l *Logger) LogPolicy(policy map[string][][]string) {
 	data := make(map[string]interface{}, len(policy))

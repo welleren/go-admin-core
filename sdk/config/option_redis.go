@@ -11,16 +11,16 @@ import (
 )
 
 var _redis *redis.Client
-var _redisStat *redis.Client
+var _stat *redis.Client
 
 // GetRedisClient 获取redis客户端
 func GetRedisClient() *redis.Client {
 	return _redis
 }
 
-// GetStatRedisClient 获取redis统计客户端
+// GetRedisClient 获取statredis客户端
 func GetStatRedisClient() *redis.Client {
-	return _redisStat
+	return _stat
 }
 
 // SetRedisClient 设置redis客户端

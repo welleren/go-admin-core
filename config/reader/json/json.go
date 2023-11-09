@@ -4,11 +4,11 @@ import (
 	"errors"
 	"time"
 
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config/encoder"
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config/encoder/json"
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config/reader"
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config/source"
 	"github.com/imdario/mergo"
+	"github.com/welleren/go-admin-core/config/encoder"
+	"github.com/welleren/go-admin-core/config/encoder/json"
+	"github.com/welleren/go-admin-core/config/reader"
+	"github.com/welleren/go-admin-core/config/source"
 )
 
 const readerTyp = "json"

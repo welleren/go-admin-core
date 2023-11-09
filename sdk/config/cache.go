@@ -6,9 +6,9 @@ import (
 )
 
 type Cache struct {
-	Redis  *RedisConnectOptions
-	Stat   *RedisConnectOptions
-	Memory interface{}
+	Redis     *RedisConnectOptions
+	StatRedis *RedisConnectOptions
+	Memory    interface{}
 }
 
 // CacheConfig cache配置
@@ -30,8 +30,13 @@ func (e Cache) Setup() (storage.AdapterCache, error) {
 		}
 		return r, nil
 	}
-	if e.Stat != nil {
-		options, err := e.Stat.GetRedisOptions()
+	return cache.NewMemory(), nil
+}
+
+// Setup 构造cache 顺序 redis > 其他 > memory
+func (e Cache) SetupStat() (storage.AdapterCache, error) {
+	if e.StatRedis != nil {
+		options, err := e.StatRedis.GetRedisOptions()
 		if err != nil {
 			return nil, err
 		}
@@ -40,7 +45,7 @@ func (e Cache) Setup() (storage.AdapterCache, error) {
 			return nil, err
 		}
 		if _redis == nil {
-			_redisStat = r.GetClient()
+			_redis = r.GetClient()
 		}
 		return r, nil
 	}

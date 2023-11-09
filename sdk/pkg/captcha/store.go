@@ -38,7 +38,7 @@ func (e *cacheStore) Get(id string, clear bool) string {
 	return ""
 }
 
-// Verify captcha's answer directly
+//Verify captcha's answer directly
 func (e *cacheStore) Verify(id, answer string, clear bool) bool {
 	return e.Get(id, clear) == answer
 }

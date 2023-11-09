@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config/source"
+	"github.com/welleren/go-admin-core/config/source"
 )
 
 func TestValues(t *testing.T) {

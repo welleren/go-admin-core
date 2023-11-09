@@ -2,7 +2,6 @@ package queue
 
 import (
 	"fmt"
-	"github.com/go-admin-team/redisqueue/v2"
 	"github.com/go-redis/redis/v9"
 	"sync"
 	"testing"

@@ -1,7 +1,6 @@
 package cache
 
 import (
-	"github.com/go-admin-team/redisqueue/v2"
 	"github.com/welleren/go-admin-core/storage"
 )
 

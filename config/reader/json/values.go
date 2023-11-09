@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config/reader"
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config/source"
 	simple "github.com/bitly/go-simplejson"
+	"github.com/welleren/go-admin-core/config/reader"
+	"github.com/welleren/go-admin-core/config/source"
 )
 
 type jsonValues struct {

@@ -7,7 +7,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"go-admin-core/logger"
+	"github.com/welleren/go-admin-core/logger"
 )
 
 func TestName(t *testing.T) {

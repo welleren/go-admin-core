@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config/source"
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config/source/env"
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config/source/file"
-	"codeup.aliyun.com/64cb084d32e3d43cbddbe43d/go-admin-core/config/source/memory"
+	"github.com/welleren/go-admin-core/config/source"
+	"github.com/welleren/go-admin-core/config/source/env"
+	"github.com/welleren/go-admin-core/config/source/file"
+	"github.com/welleren/go-admin-core/config/source/memory"
 )
 
 func createFileForIssue18(t *testing.T, content string) *os.File {
